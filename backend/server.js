@@ -1,4 +1,5 @@
 require('dotenv').config()
+const cors = require('cors')
 const express = require('express')
 const app =express()
 const PORT = process.env.PORT || 3000
@@ -7,6 +8,11 @@ connectToDb()
 const notesController = require('./controllers/notesController')
 
 app.use(express.json())
+app.use(cors({
+    origin:true,
+    credentials: true
+  }))
+// CORS: CrossOriginResourceSharing
 // -------------------------------------------------[Routes  (HTTP)=> GET POST PUT PATCH DELETE]
 app.get('/notes',notesController.fetchNotes)
 // -->Retrieve all note in DB
