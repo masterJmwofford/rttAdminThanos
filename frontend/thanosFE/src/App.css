@@ -1,7 +1,6 @@
 #root {
-  max-width: 1280px;
+  width:90vw;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -39,4 +38,69 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.dashTitle{
+  border:solid blue;
+}
+.notesContainer{
+  border:solid lightgrey;
+}
+.noteGoat{
+  border:solid lightblue;
+  padding:1em;
+  margin:2em;
+  border-width:.2px;
+  /* height:22px;  */
+  border-radius:8px;
+  display:flex;
+  justify-content: space-between;
+}
+.top{
+  border:solid lightblue;
+  border-radius:9px;
+  border-width:.2px;
+  padding:10px;
+  /* display: flex; */
+  justify-content: space-between;
+  width:65%;
+  
+}
+.bottom{
+  display:flex;
+  justify-content: space-between;
+  width:20%;
+}
+.editBtn, .deleteBtn {
+  border:solid white;
+  border-width:.2px;
+ padding:2px;
+ height:15px;
+ margin-top:10%;
+ border-radius:4px;
+ font-size:12px;
+}
+.editBtn:hover, .deleteBtn:hover {
+  border:solid lime;
+  border-width:.2px;
+ padding:2px;
+ color:lime;
+ font-size:12px;
+}
+.noteTitle{
+  text-align:left;
+}
+.noteBody{
+  text-align:right;
+}
+.formMajor{
+  border:solid white;
+  border-width:.2px;
+  /* height:22vh; */
+  margin:2em;
+}
+
+form{
+  border:solid green;
+  margin:1em;
 }
